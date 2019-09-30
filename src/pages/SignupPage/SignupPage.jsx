@@ -46,6 +46,7 @@ class LoginPage extends React.Component {
   }
 
   onHandleSubmit(e) {
+    //e.preventDefault()
 
     console.log(this.state.email)
 
@@ -83,11 +84,12 @@ class LoginPage extends React.Component {
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form
                     name="signup"
-                    method="POST"
+                    method="post"
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     onSubmit={(e) => this.onHandleSubmit(e)}
                     className={classes.form}>
+                    <input type="hidden" name="form-name" value="signup" />
                     <p className={classes.divider}>Please enter your email</p>
                     <CardBody>
                       <CustomInput
