@@ -82,7 +82,13 @@ class LoginPage extends React.Component {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]}>
-                  <form data-netlify="true" onSubmit={(e) => this.onHandleSubmit(e)} className={classes.form}>
+                  <form
+                    name="signup"
+                    method="POST"
+                    netlify-honeypot="bot-field"
+                    data-netlify="true"
+                    onSubmit={(e) => this.onHandleSubmit(e)}
+                    className={classes.form}>
                     <p className={classes.divider}>Please enter your email</p>
                     <CardBody>
                       <CustomInput
