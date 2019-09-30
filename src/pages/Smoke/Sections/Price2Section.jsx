@@ -72,6 +72,12 @@ class Price2Section extends React.Component {
         <br />
         <Link to="/signup">
           <Button
+            onClick={() => {
+              window.gtag('event', 'click', {
+                'event_category': 'landing-page',
+                'event_label': 'signup'
+              });
+            }}
             style={{'borde-color':'coral'}}
             color="info"
             size="lg"

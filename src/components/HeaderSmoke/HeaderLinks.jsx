@@ -47,7 +47,13 @@ function HeaderLinks({ ...props }) {
             <Button
               color="info"
               style={{'font-size': '12px'}}
-              onClick={() => scrollTo('#subscribe')}
+              onClick={() => {
+                scrollTo('#subscribe')
+                window.gtag('event', 'click', {
+                  'event_category': 'header',
+                  'event_label': 'buynow'
+                });
+              }}
               round>
 
               <ShoppingCart className={classes.icons} />

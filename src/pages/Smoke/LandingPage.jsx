@@ -76,7 +76,14 @@ class LandingPage extends React.Component {
                   </h4>
                   <br />
                     <Button
-                      onClick={() => scrollTo('#subscribe')}
+                      onClick={() => {
+                        scrollTo('#subscribe')
+
+                        window.gtag('event', 'click', {
+                          'event_category': 'landing-page',
+                          'event_label': 'buynow'
+                        });
+                      }}
                       color="info"
                       size="md"
                       target="_blank"

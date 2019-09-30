@@ -46,13 +46,16 @@ class LoginPage extends React.Component {
   }
 
   onSubmitEmail(email) {
+    
     console.log(email)
 
     window.gtag('event', 'click', {
-      'event_category': 'singup',
-      'event_label': 'email',
+      'event_category': 'signup',
+      'event_label': 'submit',
       'value': email
     });
+
+    this.setState({ 'email': '' })
   }
 
   render() {

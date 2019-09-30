@@ -30,14 +30,14 @@ class TestimonialsSection extends React.Component {
           <br />
           <br />
           <br />
-          <GridContainer justify="left">
+          <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <p className={classes.description}>
-              "I have been a Smart Crypto Advisor user for about 4 months now and I have created really effective strategies that not only beat the market but that do so on a much better risk-adjusted basis."</p>
+              "I have been a Smart Crypto Advisor user for about 4 months now and I have created really effective strategies that not only beat the market, but that do so on a much better risk-adjusted basis."</p>
             <p className={classes.description}>– Eric T.</p>
             </GridItem>
           </GridContainer>
-          <GridContainer justify="right">
+          <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
@@ -46,14 +46,14 @@ class TestimonialsSection extends React.Component {
             <p className={classes.description}>– Sebastian M.</p>
             </GridItem>
           </GridContainer>
-          <GridContainer justify="left">
+          <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <p className={classes.description}>
                 "Excellent tool to identify daily market opportunities" </p>
             <p className={classes.description}>– Nathan B.</p>
             </GridItem>
           </GridContainer>
-          <GridContainer justify="right">
+          <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
