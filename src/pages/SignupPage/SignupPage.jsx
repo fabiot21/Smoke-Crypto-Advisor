@@ -46,7 +46,7 @@ class LoginPage extends React.Component {
   }
 
   onHandleSubmit(e) {
-    //e.preventDefault()
+    e.preventDefault()
 
     console.log(this.state.email)
 
