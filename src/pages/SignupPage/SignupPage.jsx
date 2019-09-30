@@ -46,7 +46,6 @@ class LoginPage extends React.Component {
   }
 
   onHandleSubmit(e) {
-    e.preventDefault()
 
     console.log(this.state.email)
 
@@ -102,6 +101,7 @@ class LoginPage extends React.Component {
                           onChange: e => this.setState({ email: e.target.value }),
                           value: this.state.email,
                           type: "email",
+                          name: 'email'
                           endAdornment: (
                             <InputAdornment position="end">
                               <Email className={classes.inputIconsColor} />
