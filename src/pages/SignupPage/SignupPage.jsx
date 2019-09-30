@@ -46,6 +46,7 @@ class LoginPage extends React.Component {
   }
 
   onHandleSubmit(e) {
+    /*
     e.preventDefault()
 
     console.log(this.state.email)
@@ -56,6 +57,7 @@ class LoginPage extends React.Component {
     });
 
     this.setState({ 'email': '' })
+    */
   }
 
   render() {
