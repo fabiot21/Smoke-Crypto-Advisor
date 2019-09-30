@@ -45,14 +45,14 @@ class LoginPage extends React.Component {
     );
   }
 
-  onSubmitEmail(email) {
-    
-    console.log(email)
+  onHandleSubmit(e) {
+    e.preventDefault()
+
+    console.log(this.state.email)
 
     window.gtag('event', 'click', {
       'event_category': 'signup',
-      'event_label': 'submit',
-      'value': email
+      'event_label': 'submit'
     });
 
     this.setState({ 'email': '' })
@@ -82,7 +82,7 @@ class LoginPage extends React.Component {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]}>
-                  <form className={classes.form}>
+                  <form data-netlify="true" onSubmit={(e) => this.onHandleSubmit(e)} className={classes.form}>
                     <p className={classes.divider}>Please enter your email</p>
                     <CardBody>
                       <CustomInput
@@ -105,7 +105,7 @@ class LoginPage extends React.Component {
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
-                      <Button onClick={() => this.onSubmitEmail(this.state.email)} simple color="success" size="lg">
+                      <Button type='submit' simple color="success" size="lg">
                         Submit
                       </Button>
                     </CardFooter>
