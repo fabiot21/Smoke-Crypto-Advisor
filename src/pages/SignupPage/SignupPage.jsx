@@ -44,8 +44,21 @@ class LoginPage extends React.Component {
       700
     );
   }
+
+  onSubmitEmail(email) {
+
+
+    window.gtag('event', 'click', {
+      'event_category': 'signup',
+      'event_label': 'email'
+    });
+
+    console.log(email)
+  }
+
   render() {
     const { classes, ...rest } = this.props;
+
     return (
       <div>
         <Header
@@ -90,7 +103,7 @@ class LoginPage extends React.Component {
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
-                      <Button onClick={() => console.log(this.state.email)} simple color="success" size="lg">
+                      <Button onClick={() => this.onSubmitEmail(this.state.email)} simple color="success" size="lg">
                         Next
                       </Button>
                     </CardFooter>
