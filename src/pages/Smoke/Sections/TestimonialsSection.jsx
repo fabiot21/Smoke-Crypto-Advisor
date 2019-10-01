@@ -18,7 +18,7 @@ class TestimonialsSection extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      <div style={{ 'font-weight': 'bold' }} className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>Testimonials</h2>

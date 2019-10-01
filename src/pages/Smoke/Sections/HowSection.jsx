@@ -21,7 +21,7 @@ class ProductSection extends React.Component {
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.title}>How does it works?</h2>
-            <h5 className={classes.description}>
+            <h5 style={{ 'font-weight': 'bold' }} className={classes.description}>
               Our algorithm amasses large amounts of historical price data,
               searching for patterns, tipping points, and other pointers.
               With that information, it builds a forecast based on probability
