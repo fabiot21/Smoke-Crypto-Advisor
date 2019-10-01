@@ -31,7 +31,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <InfoArea
                 title="Cryptocurrency Prediction"
-                description="Select any of the top 100 cryptocurrencies and the system will output the predicted action as a category, buy or sell, along with the expected price."
+                description="Select any of the top 20 cryptocurrencies and the system will output the predicted action as a category, buy or sell, along with the expected price."
                 icon={Flare}
                 iconColor="info"
                 vertical
