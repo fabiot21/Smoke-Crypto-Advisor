@@ -25,6 +25,12 @@ import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
 import image from "assets/img/crypto-bg.jpg";
 
+const encode = (data) => {
+   return Object.keys(data)
+       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+       .join("&");
+ }
+
 class LoginPage extends React.Component {
   constructor(props) {
     super(props);
@@ -46,18 +52,25 @@ class LoginPage extends React.Component {
   }
 
   onHandleSubmit(e) {
-    /*
     e.preventDefault()
 
-    console.log(this.state.email)
 
     window.gtag('event', 'click', {
       'event_category': 'signup',
       'event_label': 'submit'
     });
 
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "signup", 'email' : this.state.email })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+
     this.setState({ 'email': '' })
-    */
+
   }
 
   render() {
@@ -86,7 +99,6 @@ class LoginPage extends React.Component {
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form
                     name="signup"
-                    method="post"
                     netlify-honeypot="bot-field"
                     data-netlify="true"
                     onSubmit={(e) => this.onHandleSubmit(e)}
