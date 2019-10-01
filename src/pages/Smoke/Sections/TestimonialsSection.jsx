@@ -36,10 +36,6 @@ class TestimonialsSection extends React.Component {
               "I have been a Smart Crypto Advisor user for about 4 months now and I have created really effective strategies that not only beat the market, but that do so on a much better risk-adjusted basis."</p>
             <p className={classes.description}>– Eric T.</p>
             </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-            </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <p className={classes.description}>
               "The monthly subscription amount was covered on the first trading day, very good service – Thank you!"</p>
@@ -51,10 +47,6 @@ class TestimonialsSection extends React.Component {
               <p className={classes.description}>
                 "Excellent tool to identify daily market opportunities" </p>
             <p className={classes.description}>– Nathan B.</p>
-            </GridItem>
-          </GridContainer>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <p className={classes.description}>
