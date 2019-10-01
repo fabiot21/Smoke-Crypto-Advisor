@@ -66,7 +66,7 @@ class LoginPage extends React.Component {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "signup", 'email' : this.state.email })
       })
-        .then(() => alert("Success!"))
+        .then(() => alert("Thank you – We will be contacting you soon!"))
         .catch(error => alert(error));
 
     this.setState({ 'email': '' })

@@ -70,9 +70,9 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={7}>
-                <h1 className={classes.title}>Beating the Crypto Market is now easier</h1>
+                <h1 className={classes.title}>Helping crypto traders make smarter decisions</h1>
                   <h4 style={{'font-weight': 'bold'}}>
-                    Smart Crypto Advisor is a tool that makes accurate predictions of the Crypto Market based on large amounts of historical data.
+                    Smart Crypto Advisor makes accurate predictions of the Crypto Market based on large amounts of historical data.
                   </h4>
                   <br />
                     <Button

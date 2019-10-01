@@ -43,7 +43,7 @@ class Price2Section extends React.Component {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Complete Access"
+              title="Full Access"
               description=""
               icon={Done}
               iconColor="success"
