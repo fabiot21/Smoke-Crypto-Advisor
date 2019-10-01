@@ -38,19 +38,24 @@ class TestimonialsSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <p className={classes.description}>
-              "The monthly subscription amount was covered on the first trading day, very good service – Thank you!"</p>
+                "Fantastic service, there are many things that distinguish the Smart Crypto Advisor algorithm. I highlight the ability to find and visualize market opportunities based on its powerful Artificial Intelligence algorithm."
+              </p>
             <p className={classes.description}>– Sebastian M.</p>
             </GridItem>
           </GridContainer>
+          <br />
+          <br />
+          <br />
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <p className={classes.description}>
-                "Excellent tool to identify daily market opportunities" </p>
+                "Excellent tool to identify daily market opportunities." </p>
             <p className={classes.description}>– Nathan B.</p>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <p className={classes.description}>
-              "Fantastic service, there are many things that distinguish the Smart Crypto Advisor algorithm. I highlight the ability to find and visualize market opportunities based on its powerful Artificial Intelligence algorithm."</p>
+                "The monthly subscription amount was covered on the first trading day, very good service – Thank you!"
+              </p>
             <p className={classes.description}>– Jonathan H.</p>
             </GridItem>
           </GridContainer>
