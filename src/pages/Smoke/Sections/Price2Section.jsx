@@ -74,7 +74,7 @@ class Price2Section extends React.Component {
           <Button
             onClick={() => {
               window.gtag('event', 'click', {
-                'event_category': 'landing-page',
+                'event_category': 'price',
                 'event_label': 'signup'
               });
             }}
