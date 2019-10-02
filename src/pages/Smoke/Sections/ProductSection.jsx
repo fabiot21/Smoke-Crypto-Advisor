@@ -51,7 +51,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={6}>
               <InfoArea
                 title="Multiple Insights"
-                description="Compare different cryptocurrencies histories, trends and opportunities."
+                description="Compare different cryptocurrencies risks, trends and opportunities."
                 icon={Equalizer}
                 iconColor="warning"
                 vertical
