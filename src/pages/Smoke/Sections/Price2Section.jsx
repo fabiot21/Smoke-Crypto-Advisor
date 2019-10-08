@@ -36,7 +36,7 @@ class Price2Section extends React.Component {
         <hr />
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={4}>
-            <h2 className={classes.title}>Just $9.99 / month!</h2>
+            <h2 className={classes.title}>Just $10 / month!</h2>
             <h3 style={{'font-weight' : 'bold'}} className={classes.description}></h3>
           </GridItem>
         </GridContainer>
